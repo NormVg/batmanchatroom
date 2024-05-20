@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="static/bcrl.svg" type="image/x-icon">
+    <link rel="stylesheet" href="static/login.css">
+    <link rel="stylesheet" href="static/tailwind.min.css">
+    <title>LogIn</title>
+</head>
+<body class="flex justify-center items-center">
+    <div >
+        <form class="items-center justify-center flex flex-col gap-2 " action="{{ url_for("login")}}" method="post">
+            <label for="username">UserName</label>
+            <input class="pl-2 text-black msg-inp" name="username" required type="text">
+            <!-- <label for="Password" >Password</label>
+            <input class="pl-2 text-black msg-inp" type="text" required name="password"> -->
+            <button id="sub" type="submit">Join</button>
+            <!-- <span>Don't have a account <a class="red-my" href="/signup">Signup</a></span> -->
+        </form>
+    </div>
+</body>
+</html>

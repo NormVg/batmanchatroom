@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: whitesmoke;
+    font-family: 'VT323', monospace;
+    
+}
+
+.red-my{
+    color: #FF5555;
+}
+
+div{
+    background: rgba(245, 245, 245, 0.137);
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+label,button{
+    color: white;
+}
+
+input{
+    padding-left: 10px;
+    color: black;
+    border: 10px;
+}
+
+#sub{
+    color: white;
+   background-color: black;
+   padding: 10px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   border-radius: 5px;
+
+}
+.msg-inp{
+    border-radius: 5px;
+}

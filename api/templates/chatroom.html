@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="static/bcrl.svg" type="image/x-icon">
+    <link rel="stylesheet" href="static/chat.css">
+    <link rel="stylesheet" href="static/tailwind.min.css">
+
+
+    <script src="https://cdn.ably.com/lib/ably.min-1.js"></script>
+
+
+    <title>ChatRoom</title>
+
+</head>
+<body>
+    <section id="msgs" class="pl-3">
+    <div id="msgs-box-main">
+        
+    </div>
+    
+        <div  class="blink" style="font-size:x-large;font-weight: bold">_</div>
+</section>
+    <div class="flex justify-left flex-row">
+        
+        <form onsubmit="send_msg()" id="msg-form" class="flex justify-center items-center">
+            <div id="blink-q" class="blink">?</div>
+            <input type="text" id="input-msg" required>
+            <button id="btn-msg" type="submit">send</button>
+        </form >
+    </div>
+
+    <script src="static/typer.js"></script>
+    <script src="static/chat.js"></script>
+</body>
+</html>
